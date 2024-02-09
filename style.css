@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main-container {
+    width: 100%;
+    height: 100%;
+    /* height: 100vh; */
+    /* background-color: #7499b7a0; */
+    background-color: rgba(000, 118, 237, 0.30);
+    /* scroll-snap-type: y mandatory;
+    overflow-y: scroll; */
+}
+html {
+    scroll-behavior: smooth;
+}
+/* .section {
+    scroll-snap-align: start;
+} */
+@font-face {
+    font-family: 'penna';
+    src: url('fonts/penna.otf') format('opentype');
+}
+@font-face {
+    font-family: 'england';
+    src: url('fonts/England-d9jVV.otf') format('opentype');
+}
+@font-face {
+    font-family: 'avenirlight';
+    src: url('fonts/Avenir\ Light.ttf') format('opentype');
+}
+
+/*-------------------------------------------NAV BAR---------------------------------------------------*/
+
+.nav-bar {
+    background-image: linear-gradient(rgba(31, 54, 122, 0.98), rgba(31, 54, 122, 0.72)) ;
+    color: lightblue;
+    height: auto;
+    width: 100%;
+    top: 0%;
+    box-sizing: border-box;
+    position: fixed;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    font-family: 'penna';
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+.nav-bar-contents {
+    width: 80% auto;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    box-sizing: border-box;
+}
+.nav-title {
+    font-size: 300%;
+    transition: 0.5s;
+}
+.nav-title:hover {
+    color: white;
+    font-size: 320%;
+}
+.nav-links {
+    width: 60%;
+    align-items: center;
+    display: flex;    
+    justify-content: space-evenly;
+    font-size: x-large;
+}
+.nav-bar a {
+    color: lightblue;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.nav-links a:hover {
+    color: white;
+    font-size: 110%;
+} 
+
+/*--------------------------------------------------HOME PAGE-------------------------------------------*/
+
+.home-page-content {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 126px;
+    padding-bottom: 40px;
+}
+.left-column {
+    width: 46%;
+    text-align: center;
+    font-family: 'penna';
+    height: auto;
+    color: darkslategray;
+}
+.bottom-traits {
+    margin-bottom: 50px;
+}
+.left-column a {
+    text-decoration: none;
+}
+.home-name {
+    font-size: 700%;
+    font-family: 'england';
+    font-weight: bold;
+    margin-top: 24%;
+    color: rgba(8, 3, 34, 0.73);
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, .6);
+}
+.home-name-traits-1 {
+    text-align: center;
+    font-size: 360%;
+    font-weight: bold;
+    text-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, .4);
+}
+.home-name-traits-2 {
+    text-align: center;
+    font-size: 280%;
+    font-weight: bold;
+    margin-top: 6px;
+    text-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, .4);
+}
+.down-arrow {
+    text-align: center;
+    font-size: 280%;
+    margin-top: 100px;
+    color: rgba(1, 1, 52, 0.4);
+    text-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, .4);
+    transition: 0.4s;
+}
+.down-arrow:hover {
+    color: rgba(1, 1, 52, 0.6) ;
+    font-size: 300%;
+}
+.right-column {
+    width: 40%;
+    height: auto;
+    text-align: center;
+}
+.home-pic {
+    box-shadow: 4px 4px 16px black;
+    width: 84%;
+    border-radius: 5px;
+}
+
+#epic-company-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-top: 40px;
+    margin-bottom: -96px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.8);
+}
+
+/*------------------------------------------ABOUT----------------------------------------------------------*/
+#about-me-title {
+    font-size: 400%;
+    font-family: 'penna';
+
+}
+.about-page {
+    text-align: center;
+    font-family: 'avenir-light';
+    font-size: large;
+    width: 80%;
+    padding: 60px;
+    margin: auto;
+    padding-top: 124px;
+    margin-bottom: -110px;
+    background-color: rgba(250, 250, 210, 0.4);
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.32);
+    border-radius: 4px;
+}
+
+/*------------------------------------------WHAT'S NEXT----------------------------------------------------------*/
+
+#next-title {
+    font-size: 320%;
+    font-family: 'penna';
+    font-weight: bold;
+    padding: 16px;
+    background-color: rgba(250, 250, 210, .4);
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.4);
+}
+.next-page {
+    text-align: center;
+    font-family: 'avenir-light';
+    font-size: large;
+    width: 100%;
+    padding-top: 94px;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+}
+.next-images {
+    display: flexbox;
+    width: 80%;
+    margin: auto;
+    margin-top: 26px;
+}
+.catsanythinggoes {
+    display: flex;
+    justify-content: space-between;
+}
+#cats {
+    min-width: 24%;
+    margin-right: 20px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
+}
+#anythinggoes {
+    min-width: 24%;
+    margin-right: 20px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
+}
+#ufomt {
+    width: 40%;
+}
+#dcpa {
+    width: 48%;
+}
+#dcpa-banner {
+    background-color: white;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+}
+#d2b {
+    max-width: 32%;
+    height: 32%;
+}
+#hg {
+    max-width: 20%;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
+}
+.captain-eon {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.eon {
+    margin-top: 18px;
+}
+#ufomt-banner {
+    background-color: black;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
+}
+.show-text {
+    padding: 36px;
+    font-size: x-large;
+    text-shadow: 0.5px 0.5px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*------------------------------------------HEADSHOT & RESUME----------------------------------------------------------*/
+
+.headshotresume {
+    margin-bottom: 20px;
+    padding-top: 65px;
+    font-family: 'avenirlight';
+    text-align: center;
+    color: lightgrey;
+}
+.hr-title {
+    font-size: 320%;
+    text-align: center;
+    font-family: 'penna';
+    font-weight: bold;
+    background-color: rgba(250, 250, 210, 0.4);
+    padding: 16px;
+    margin: 32px 0;
+    color: black;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.4);
+}
+.hr-columns {
+    display: flex;
+    justify-content: space-evenly;
+}
+.hr-column {
+    height: 100%;
+    max-width: 28%;
+}
+.headshot {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+.headshot:hover {
+    transform: scale(1.04);
+}
+.resumes {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+.resumes:hover {
+    transform: scale(1.04);
+}
+.label {
+    background-color: rgba(0, 0, 128, 0.6);
+    transition: 0.4s;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    color: lightgrey;
+    display: inline-block;
+}
+.label:hover {
+    transform: scale(1.02);
+    background-color: rgba(0, 0, 128, 0.8);
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.6);
+}
+.hr-footer {
+    margin-top: 40px;
+    font-size: x-large;
+    color: rgba(0, 0, 128, 0.2);
+}
+
+/*------------------------------------------GALLERY----------------------------------------------------------*/
+
+.gallery-page {
+    text-align: center;
+    font-family: 'avenir-light';
+    font-size: large;
+    width: 100%;
+    margin: auto;
+    margin-top: 200px;
+    padding-top: 62px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+}
+#gallery-title {
+    font-size: 320%;
+    text-align: center;
+    font-family: 'penna';
+    font-weight: bold;
+    background-color: rgba(250, 250, 210, 0.4);
+    padding: 16px 0;
+    margin: 32px 0;
+    color: black;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.4);
+}
+#all-pics a img {
+    max-height: 300px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.5s;
+    margin: 8px;
+}
+.img-chunk {
+    text-decoration: none;
+    color: lightcyan;
+    position: relative;
+}
+.img-chunk:hover img{
+    transform: scale(1.06);
+}
+.img-chunk .img-desc {
+    position: absolute;
+    top: -70px;
+    bottom: 6px;
+    left: 0;
+    right: 0;
+    transition: 0.5s;
+    padding: 6px;
+    opacity: 0%;
+    padding-top: 10px;
+}
+.img-chunk:hover .img-desc {
+    /* background-image: linear-gradient(rgba(47, 79, 79, 0.6), rgba(47, 79, 79)); */
+    opacity: 90%;
+    text-shadow: 1px 1px 12px black;
+}
+/*------------------------------------------MEDIA----------------------------------------------------------*/
+
+#media-title {
+    font-size: 320%;
+    text-align: center;
+    font-family: 'penna';
+    font-weight: bold;
+    background-color: rgba(250, 250, 210, 0.4);
+    padding: 16px 0;
+    margin: 32px 0;
+    color: black;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.4);
+}
+.media-page {
+    text-align: center;
+    font-family: 'avenir-light';
+    font-size: large;
+    width: 100%;
+    padding-top: 62px;
+    margin: auto;
+    border-radius: 4px;
+}
+
+/*------------------------------------------MUSIC----------------------------------------------------------*/
+
+#music-title {
+    font-size: 320%;
+    text-align: center;
+    font-family: 'penna';
+    font-weight: bold;
+    background-color: rgba(250, 250, 210, 0.4);
+    padding: 16px 0;
+    margin: 32px 0;
+    color: black;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.4);
+}
+.music-page {
+    text-align: center;
+    font-family: 'avenir-light';
+    font-size: large;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 60px;
+    padding: 62px 0 0 0;
+    border-radius: 4px;
+}
+.songs {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 0;
+}
+.song-div {
+    width: 30%;
+}
+audio::-webkit-media-controls-panel {
+    background-color: lightskyblue;
+}
+.song-description {
+    margin-top: 10px;
+}
+
+/*------------------------------------------FOOTER----------------------------------------------------------*/
+
+.footer {
+    background-image: linear-gradient(rgba(31, 54, 122, 0.4), rgba(31, 54, 122, 0.8)) ;
+    text-align: center;
+    font-family: 'avenirlight';
+    font-size: larger;
+    padding: 60px 0 100px 0 ;
+    color: lightgray;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 8px black;
+}
+#footer-title {
+    font-size: 420%;
+    font-weight: bold;
+    padding: 0;
+    color: lightgray;
+    font-family: 'penna';
+    text-shadow: 1px 1px 8px black;
+}
+.footer li {
+    transition: 0.5s;
+}
+.footer li:hover {
+    font-size: 140%;
+}
